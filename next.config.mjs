@@ -1,6 +1,8 @@
 const nextConfig = {
-  basePath: "/v0-elt-education",
-  assetPrefix: "/v0-elt-education",
+  basePath: "/Hilltop",
+  assetPrefix: "/Hilltop",
+  output: "export",
+  trailingSlash: true,
   typescript: { ignoreBuildErrors: true },
   images: { unoptimized: true },
 }
