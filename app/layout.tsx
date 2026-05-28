@@ -1,23 +1,13 @@
 import type { Metadata } from 'next'
-import { Inter, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 import { Header } from '@/components/layout/header'
 import { Footer } from '@/components/layout/footer'
 
-const inter = Inter({ 
-  subsets: ["latin"],
-  variable: '--font-sans'
-})
-const geistMono = Geist_Mono({ 
-  subsets: ["latin"],
-  variable: '--font-mono'
-})
-
 export const metadata: Metadata = {
-  title: 'hilltop | Empowering Future Leaders',
-  description: 'ELT Education - Empowering Future Leaders through academic excellence, expert faculty, and proven results since 2001.',
-  keywords: ['education', 'school', 'academics', 'learning', 'ELT Education'],
+  title: 'Hilltop | Empowering Future Leaders',
+  description: 'Hilltop Education - Empowering Future Leaders through academic excellence, expert faculty, and proven results since 2001.',
+  keywords: ['education', 'school', 'academics', 'learning', 'Hilltop Education'],
 }
 
 export default function RootLayout({
@@ -26,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${geistMono.variable}`}>
+    <html lang="en">
       <body className="font-sans antialiased bg-[#f4f9f5]">
         <Header />
         <main>{children}</main>
