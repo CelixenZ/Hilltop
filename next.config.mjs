@@ -1,11 +1,6 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  images: {
-    unoptimized: true,
-  },
+  basePath: "/v0-elt-education",
+  assetPrefix: "/v0-elt-education",
+  typescript: { ignoreBuildErrors: true },
+  images: { unoptimized: true },
 }
-
-export default nextConfig
